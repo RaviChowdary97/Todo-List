@@ -39,6 +39,8 @@ const EditMovieForm = ({ movie }) => {
     };
     console.log(movie);
     updateMoviesdata(movie, id);
+    alert("card updated successfully");
+    navigate(-1);
   };
   const updateMoviesdata = async (movie, id) => {
     const data = await fetch(
