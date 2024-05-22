@@ -14,6 +14,10 @@ export const AddCard = () => {
   }, []);
 
   const addCard = () => {
+    if (!Name.trim() || !Descrption.trim()) {
+      alert("Name and Description are needed");
+      return;
+    }
     const card = {
       Name: Name,
       Descrption: Descrption,
