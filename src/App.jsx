@@ -10,11 +10,9 @@ function App() {
       <h2 className="h2">MY TODO</h2>
       <AddCard />
       <br />
-      <div className="div">My TODO'S</div>
-      <br />
-      <br />
-      <CardList />
+
       <Routes>
+        <Route path="/" element={<CardList />} />
         <Route path="/edit/:id" element={<EditCard />} />
       </Routes>
     </div>
